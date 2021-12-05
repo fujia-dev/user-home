@@ -1,16 +1,14 @@
 <div align="center">
-  <!-- <a href="https://fujia-dev.github.io/root/" target="_blank">
-    <img alt="root logo" width="200" src="https://static-images-1305792369.cos.ap-shanghai.myqcloud.com/root.svg"/>
-  </a> -->
+  <img alt="hammer logo" width="200" src="https://static-images-1305792369.cos.ap-shanghai.myqcloud.com/user-home.svg"/>
 </div>
 
 <div align="center">
-  <h1>@fujia/root</h1>
+  <h1>@fujia/user-home</h1>
 </div>
 
 <div align="center">
 
-一个检查并降级root权限的库。
+获取用户的目录，如果用户不存在的，可以回退到一个临时的目录
 
 </div>
 
@@ -20,43 +18,29 @@
 
 </div>
 
+
 ## 安装
 
 ```bash
-npm i @fujia/root
+npm i @fujia/user-home
 
 # or use yarn
-yarn add @fujia/root
+yarn add @fujia/user-home
 ```
 
 ## 使用
 
-你可以将整个包导入来使用：
+直接引用这个npm包，示例如下：
 
 ```javascript
-import _ from '@fujia/root';
-```
+import userHome from '@fujia/user-home'
 
-除此之外，也可以引入单个函数来使用:
+console.log(userHome()); // => '/Users/sunny'
 
-```javascript
-import { isUndef, scrollbarWidth } from '@fujia/root';
-```
+// And if there is no home directory:
+console.log(userHome()); // => undefined, and log info: 'Doesn\'t exist home directory for current login user.'
 
-## 文档
-
-
-
-## 功能
-
-
-
-## 开发
-
-```bash
+// also, you can get the temp directory by pass true param
+console.log(userHome(true)); // => something look like(mac): /var/folders/70/x0nk_t0s2m93xbzq4x7px0t40000gn/T 
 
 ```
-
-## 参考资料
-
-
