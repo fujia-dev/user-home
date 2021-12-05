@@ -4,9 +4,9 @@
   "description": "Obtain the user home directory and fallback to the system temp directory if don't exist.",
   "scripts": {
     "build": "rimraf lib && rollup -c rollup.config.js",
-    "test": "jest",
+    "test": "jest && npm run coverall",
     "test:coverage": "jest --coverage",
-    "report-coverage": "cat ./coverage/lcov.info | coveralls",
+    "coverall": "cat coverage/lcov.info | coveralls",
     "prepare": "husky install",
     "prerelease": "npm run build",
     "release": "sh scripts/release.sh"

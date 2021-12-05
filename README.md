@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="hammer logo" width="200" src="https://static-images-1305792369.cos.ap-shanghai.myqcloud.com/hammer.svg"/>
+  <img alt="hammer logo" width="200" src="https://static-images-1305792369.cos.ap-shanghai.myqcloud.com/user-home.svg"/>
 </div>
 
 <div align="center">
