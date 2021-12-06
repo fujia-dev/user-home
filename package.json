@@ -1,6 +1,6 @@
 {
   "name": "@fujia/user-home",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Obtain the user home directory and fallback to the system temp directory if don't exist.",
   "scripts": {
     "build": "rimraf lib && rollup -c rollup.config.js",
