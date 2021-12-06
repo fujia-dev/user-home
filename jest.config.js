@@ -1,7 +1,7 @@
 module.exports = {
-  // roots: [
-  //   '<rootDir>/__tests__'
-  // ],
+  roots: [
+    '<rootDir>/__tests__'
+  ],
   // testEnvironment: 'jsdom', // default - node.js
   // testRegex: 'tests/(.+)\\.test\\.(jsx?|tsx?)$',
   transform: {
