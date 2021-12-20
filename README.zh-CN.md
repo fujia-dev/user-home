@@ -35,12 +35,12 @@ yarn add @fujia/user-home
 ```javascript
 import userHome from '@fujia/user-home'
 
-console.log(userHome()); // => '/Users/sunny'
+console.log(await userHome()); // => '/Users/sunny'
 
 // And if there is no home directory:
-console.log(userHome()); // => undefined, and log info: 'Doesn\'t exist home directory for current login user.'
+console.log(await userHome()); // => undefined, and log info: 'Doesn\'t exist home directory for current login user.'
 
 // also, you can get the temp directory by pass true param
-console.log(userHome(true)); // => something look like(mac): /var/folders/70/x0nk_t0s2m93xbzq4x7px0t40000gn/T 
+console.log(await userHome(true)); // => something look like(mac): /var/folders/70/x0nk_t0s2m93xbzq4x7px0t40000gn/T 
 
 ```
